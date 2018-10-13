@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+     <h1>Here is the stock price history for {{ posts["company"] }} in last 6 months</h1>
+	 
+	 <p>  Highest Stock price value :${{ posts["Max_price"]}}  </p>
+	 <p>  Lowest Stock price value  :${{ posts["Min_price"] }}  </p> 
+	 <p>  Maximum Intraday gain     :${{ posts["Max_intraday"] }}  </p>
+	 <p>  Maximum Intraday loss     :${{ posts["Min_intraday"] }}  </p>
+	 <img src=" {{url_for('static',filename=image_name)}} ">
+
+</body>
+</html>
